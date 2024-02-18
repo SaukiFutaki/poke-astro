@@ -1,6 +1,8 @@
 ---
 import MainLayout from "../layout/MainLayout.astro";
 import { Image } from "astro:assets";
+import Card from "../components/Vue/Card.vue";
+
 const response = await fetch(import.meta.env.PUBLIC_BASE_URL);
 const { results } = await response.json();
 console.log(results);
