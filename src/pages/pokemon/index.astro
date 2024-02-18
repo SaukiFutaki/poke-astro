@@ -1,0 +1,18 @@
+---
+import MainLayout from "../../layout/MainLayout.astro";
+import Card from "../../components/React/Card.jsx";
+// const textGreen = "green";
+---
+
+<!-- <style define:vars={{ textGreen }}>
+  .text-green {
+    color: var(--textGreen);
+  }
+</style> -->
+<MainLayout title="pokemon">
+  <!-- <h1 style={{ color: "red" }}>style with object style</h1>
+  <h1 style="color : blue">style with string style</h1>
+  <h1 class="text-green">style with class</h1>
+  <h1 class="text-green-400 bg-blue-600">Style with tailwind</h1> -->
+  <Card client:load />
+</MainLayout>
