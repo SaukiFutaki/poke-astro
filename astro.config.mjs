@@ -11,5 +11,9 @@ import vue from "@astrojs/vue";
 export default defineConfig({
   integrations: [tailwind(), react(), vue()],
   output: "server",
-  adapter: vercelServerless()
+  adapter: vercel({
+    webAnalytics: {
+      enabled: true,
+    }
+  })
 });
